@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Bebas Neue';
+  --font-body: 'DM Sans';
+  --brand: #f97316;
+  --brand-dark: #ea580c;
+  --dark: #0f172a;
+  --mid: #1e293b;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--brand); border-radius: 3px; }
+
+/* Selection */
+::selection { background: var(--brand); color: white; }
+
+/* Focus */
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+/* Utility classes */
+.font-display { font-family: 'Bebas Neue', serif; }
+
+.btn-primary {
+  @apply bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95;
+}
+
+.btn-secondary {
+  @apply border border-brand-500 text-brand-400 hover:bg-brand-500 hover:text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95;
+}
+
+.btn-ghost {
+  @apply text-slate-400 hover:text-white hover:bg-white/5 px-4 py-2 rounded-lg transition-all duration-200;
+}
+
+.card {
+  @apply bg-slate-800/50 border border-slate-700/50 rounded-xl overflow-hidden;
+}
+
+.input {
+  @apply bg-slate-800 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors;
+}
+
+.label {
+  @apply block text-sm font-medium text-slate-300 mb-1.5;
+}
+
+.section-title {
+  @apply font-display text-4xl md:text-5xl text-white tracking-wide;
+}
+
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-pending   { @apply bg-yellow-500/20 text-yellow-400 border border-yellow-500/30; }
+.badge-processing { @apply bg-blue-500/20 text-blue-400 border border-blue-500/30; }
+.badge-shipped   { @apply bg-purple-500/20 text-purple-400 border border-purple-500/30; }
+.badge-delivered { @apply bg-green-500/20 text-green-400 border border-green-500/30; }
+
+/* Cart drawer overlay */
+.drawer-overlay {
+  @apply fixed inset-0 bg-black/60 backdrop-blur-sm z-40;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  background: linear-gradient(90deg, var(--brand-dark), var(--brand), var(--brand-dark));
+  background-size: 200% 100%;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Product card hover */
+.product-card {
+  @apply card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-500/10 hover:border-brand-500/30;
+}
+
+/* Skeleton loader */
+.skeleton {
+  @apply bg-slate-700/50 animate-pulse rounded;
+}
+
+/* Status badge colors */
+.status-pending   { color: #fbbf24; background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.3); }
+.status-processing { color: #60a5fa; background: rgba(96,165,250,0.1); border: 1px solid rgba(96,165,250,0.3); }
+.status-shipped   { color: #a78bfa; background: rgba(167,139,250,0.1); border: 1px solid rgba(167,139,250,0.3); }
+.status-delivered { color: #34d399; background: rgba(52,211,153,0.1); border: 1px solid rgba(52,211,153,0.3); }

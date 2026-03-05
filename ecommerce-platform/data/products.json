@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "partNumber": "PN-1001",
+    "name": "Brake Pad Set",
+    "description": "Premium ceramic brake pads for superior stopping power. Compatible with most sedans and SUVs. Dust-free formula with low noise operation.",
+    "price": 45,
+    "category": "Brakes",
+    "image": "/images/brake-pad.jpg",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "partNumber": "PN-2080",
+    "name": "Oil Filter",
+    "description": "High-flow oil filter with anti-drain back valve. Removes harmful contaminants to keep your engine clean and running efficiently.",
+    "price": 12,
+    "category": "Engine",
+    "image": "/images/oil-filter.jpg",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "partNumber": "PN-3045",
+    "name": "Spark Plug (Set of 4)",
+    "description": "Iridium-tipped spark plugs for maximum fuel efficiency and performance. Long-life design rated for 100,000 miles.",
+    "price": 38,
+    "category": "Engine",
+    "image": "/images/spark-plug.jpg",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "partNumber": "PN-4012",
+    "name": "Air Filter",
+    "description": "High-performance air filter that increases airflow up to 50% over paper filters. Washable and reusable for lifetime use.",
+    "price": 28,
+    "category": "Engine",
+    "image": "/images/air-filter.jpg",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "partNumber": "PN-5099",
+    "name": "Shock Absorber (Front Pair)",
+    "description": "Gas-charged shock absorbers for improved ride quality and handling. Direct OEM replacement with no modifications required.",
+    "price": 120,
+    "category": "Suspension",
+    "image": "/images/shock-absorber.jpg",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "partNumber": "PN-6023",
+    "name": "Timing Belt Kit",
+    "description": "Complete timing belt kit including belt, tensioner, and idler pulley. Essential maintenance item to prevent engine damage.",
+    "price": 85,
+    "category": "Engine",
+    "image": "/images/timing-belt.jpg",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "partNumber": "PN-7067",
+    "name": "Alternator",
+    "description": "Remanufactured alternator with new brushes, bearings, and regulator. Full load tested before shipping. Includes core exchange.",
+    "price": 195,
+    "category": "Electrical",
+    "image": "/images/alternator.jpg",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "partNumber": "PN-8034",
+    "name": "Radiator",
+    "description": "All-aluminum radiator with 30% more cooling capacity than stock. Includes drain plug and mounting hardware.",
+    "price": 150,
+    "category": "Cooling",
+    "image": "/images/radiator.jpg",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "partNumber": "PN-9011",
+    "name": "Starter Motor",
+    "description": "Heavy-duty starter motor with increased torque. Fits most 4-cylinder and V6 engines. Fully remanufactured with warranty.",
+    "price": 110,
+    "category": "Electrical",
+    "image": "/images/starter-motor.jpg",
+    "featured": false
+  },
+  {
+    "id": 10,
+    "partNumber": "PN-1023",
+    "name": "Fuel Pump Assembly",
+    "description": "Complete fuel pump module with sending unit. Direct OEM fit for accurate fuel level readings and reliable delivery.",
+    "price": 135,
+    "category": "Fuel System",
+    "image": "/images/fuel-pump.jpg",
+    "featured": true
+  }
+]
